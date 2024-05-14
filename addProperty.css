@@ -1,0 +1,74 @@
+/* addProperty.css */
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+/* Form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Input fields */
+select, input[type="number"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF8C00; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #FFA94D; /* Lighter shade of orange on hover */
+}
+
+/* File input */
+input[type="file"] {
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Error message (optional) */
+.error-message {
+    color: #ff0000; /* Red color */
+    font-size: 14px;
+    margin-top: 5px;
+}

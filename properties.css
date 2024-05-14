@@ -1,0 +1,196 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.property-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.property-card {
+    width: calc(33.33% - 20px); /* Adjust the width to fit three cards per row with some spacing */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-details {
+    padding: 20px;
+}
+
+.property-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.property-details p {
+    margin: 5px 0;
+}
+
+.property-image {
+    height: 300px; /* Increase the height to make the box bigger */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.property-image img {
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    max-height: 100%; /* Ensure images don't exceed the container height */
+}
+
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.filter-options a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.filter-options a:hover {
+    color: #666;
+}
+
+/* Contact Agent Button */
+.contact-agent-button {
+    background-color: #FF8C00;
+    color: white;
+     transform: translateX(+100%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block; /* Ensure button stays in a line */
+}
+
+/* Agent Contact Info */
+.agent-contact-info {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Showing Agent Contact Info */
+.show-contact-info .agent-contact-info {
+    display: block;
+}
+
+/* Slick Slider Styles */
+.slider {
+    width: 100%; /* Set the width of the slider to 100% */
+}
+
+.slider img {
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    max-height: 100%; /* Ensure images don't exceed the container height */
+}
+
+
+
+.agent-info-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.agent-info-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.filter-options form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-options label,
+.filter-options select,
+.filter-options input[type="number"],
+.filter-options input[type="submit"] {
+    margin-bottom: 10px;
+}
+
+.filter-options select,
+.filter-options input[type="number"],
+.filter-options input[type="submit"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-options input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-options input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+button {
+    background-color: #FF8C00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFA54F;
+}
